@@ -1,0 +1,214 @@
+:root {
+    --azul: #c5e4e7;
+    --verde: #00474b;
+    --verde-claro: #2bb09f;
+    --gris: #f3f8fb;
+    --gris-oscuro: #7f9c9f;
+    --verde-desactivado: #0d686d;
+    --blanco: #ffffff;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--azul);
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+.general-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--blanco);
+    width: 60%;
+    max-width: 770px;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px -2px 11px -2px rgba(0,0,0,0.5);
+}
+/* --------------- HEADER ----------------- */
+header h1 {
+    font-size: 20px;
+    color: var(--verde)
+}
+/* --------------- PART1 ----------------- */
+.part1 {
+    margin: 25px 25px;
+}
+label {
+    color: var(--gris-oscuro);
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+form {
+    margin-bottom: 50px;
+}
+.input {
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--gris);
+    padding: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
+.input img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.input input {
+    border: none;
+    background-color: var(--gris);
+    width: 100%;
+    text-align: right;
+    font-size: 25px;
+    outline: none;
+    color: var(--verde);
+    padding-right: 10px;
+}
+/* --------------- BUTTONS ----------------- */
+.buttons h2 {
+    font-size: 16px;
+    color: var(--gris-oscuro);
+    font-weight: lighter;
+}
+.buttons-container {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 150px);
+}
+.buttons button {
+    background-color: var(--verde);
+    border: none;
+    margin: 10px;
+    height: 40px;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons button:active {
+    background-color: var(--verde-desactivado);
+    color: var(--verde);
+    height: 38px;
+}
+.buttons button:hover {
+    background-color: var(--verde-desactivado);
+    color: var(--verde);
+}
+.buttons input {
+   margin: 10px;
+   border-radius: 5px;
+   outline: none;
+   background-color: var(--gris);
+   border: none;
+   font-size: 20px;
+   font-weight: bold;
+   max-width: 149px;
+   text-align: center;
+   color: var(--verde);
+}
+/* --------------- PART2 ----------------- */
+.part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 300px;
+    background-color: var(--verde);
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    right: 40px;
+}
+.part2 button {
+    width: 80%;
+    height: 40px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--verde-claro);
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+.part2 button:active {
+    background-color: var(--verde-desactivado);
+    color: var(--verde);
+    width: 78%;
+    height: 38px;
+}
+.part2 button:hover {
+    background-color: var(--verde-desactivado);
+    color: var(--verde);
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    width: 80%;
+}
+.total h2 {
+    font-size: 15px;
+    color: var(--blanco);
+    font-weight: lighter;
+}
+.total p {
+    font-size: 25px;
+    color: var(--verde-claro);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        display: block;
+    }
+    header {
+        text-align: center;
+    }
+    header h1 {
+        margin: 40px;
+    }
+    .general-container {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .part1 {
+        margin: 0;
+    }
+    form {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .buttons-container {
+        justify-content: center;
+    }
+    .part2 {
+        display: flex;
+        width: 90%;
+        height: 250px;
+        top: 0;
+        right: 0;
+        left: 23px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

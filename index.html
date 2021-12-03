@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Calculadora de porcentajes</title>
+</head>
+<body>
+    <header>
+        <h1>SPLI<br>TTER</h1>
+    </header>
+    <section class="general-container">
+        <div class="part1">
+            <form action="">
+                <label for="input">Precio</label>
+                <div class="input">
+                    <img src="./img/icons8-dólar-estadounidense-50.png" alt="">
+                    <input type="number" id="input" placeholder="0">
+                </div>
+            </form>
+            <div class="buttons">
+                <h2>Selecciona el descuento</h2>
+                <div class="buttons-container">
+                    <button id="5">5%</button>
+                    <button id="10">10%</button>
+                    <button id="15">15%</button>
+                    <button id="20">20%</button>
+                    <button id="25">25%</button>
+                    <input id="descuento" type="number" placeholder="Otro">
+                </div>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="total">
+                <h2>Total</h2>
+                <p id="total">0.00</p>
+            </div>
+            <button id="ejecutar">EJECUTAR</button>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
